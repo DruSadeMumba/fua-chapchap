@@ -9,27 +9,36 @@
     <title>Fua Chapchap</title>
 </head>
 <body>
-    <h3>Checkout form</h3>
-    <form action="" class="form-group col-sm-6 data">
-        <input type="text" class="form-control checkoutdata" placeholder="Enter your Name:">
-        <input type="text" class="form-control checkoutdata" placeholder="Enter your phone number: ">
-        <input type="text" class="form-control checkoutdata" placeholder="Enter your location: ">
-        <input type="number" class="form-control" id="number" placeholder="Number of Kgs:" min="1" required>
-        <button class="btn bg-info text-center d-block mx-auto go">Checkout</button>
-    </form>
-    <h3>Payment Method</h3>
-    <div class="radio">
-        <label>
-            <input type="radio" name="paymentmethod" value="Mpesa" checked>
-            Mpesa
-        </label>
-    </div>
-    <div class="radio">
-        <label>
-            <input type="radio" name="paymentmethod" value="debitcard">
-            Debit card
-        </label>
-    </div>
+  <div class="checkoutform" id="checkout">
+      <h3 class="text centre" id="checkout-form"> Checkout Form</h3>
+      <div class="form-group row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 checkout-overlay text-center">
+              <form class="col-sm-6 offset-sm-3 text-center">
+                  <label>Select Service Option:</label>
+                  <select class="custom-select custom-select-md mb-3 service option" required>
+                      <option value="inhouse">Inhouse</option>
+                      <option value="pickup"> Pickup</option>
+                  </select>
+                  <label for="number">Enter the Weight of Your Clothes in Kgs:</label>
+                  <input type="number" class="form-control" id="number" placeholder="Weight in Kgs" min="1" required>
+                 <label>Select Your Preferred Payment Method:</label>
+                 <select class="custom-select custom-select-md mb-3" id="Payment Method" required>
+                     <option value="Mpesa">Mpesa</option>
+                     <option value="debit card">Debit Card</option>
+                 </select>
+              </form>
+              <a href="#summary">
+                  <button type="submit" class="btn btn-success checkout" id="checkout">
+                      Checkout
+                  </button>
+              </a>
+
+          </div>
+          <div class="col-sm-2"></div>
+      </div>
+
+  </div>  
 
 
 
