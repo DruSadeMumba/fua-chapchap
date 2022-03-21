@@ -48,7 +48,10 @@
     font-weight: bold;
 }
 #about-us  {
-    padding: 100px;
+    padding-top: 150px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 200px;
 }
 #abt-us-img1 img  {
 height: 350px;
@@ -62,4 +65,11 @@ margin-left: 150px;
     padding: 150px;
     font-weight: bolder;
     font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+}
+#rate-us  {
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
 }
