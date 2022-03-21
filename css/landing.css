@@ -1,0 +1,16 @@
+.card-header  {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    background-color: white;
+}
+.card-header img  {
+    width: 120px;
+    height: 80px;
+}
+#moto  {
+    font-family: 'Roboto', sans-serif;
+    background-color: rgb(105, 143, 54);
+    height: 60vh;
+    text-align: center;
+    padding-top: 50px;
+}
