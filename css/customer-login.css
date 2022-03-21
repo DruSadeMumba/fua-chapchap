@@ -2,17 +2,20 @@
     align-items: center;
     text-align: center;
     /* background-color: rgb(105,143,54);*/
-    color: white;
 }
 h1{
     font-family: 'Poppins', sans-serif;
+    color: white;
 }
-p{
+p, legend{
     font-family: 'Roboto', sans-serif;
 }
 body{
-    background-image: url(../login-assets/pexels-ilaria-122974.jpg);
+    background-image: url(../login-assets/new-img.jpg);
     background-repeat: no-repeat;
     background-size: 100%;
     opacity: 1;
+}
+label{
+    color: white;
 }
