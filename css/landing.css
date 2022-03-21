@@ -16,7 +16,16 @@
 }
 #slideshow img  {
     height: 500px;
-    width: 650px;
-    overflow: hidden;
+    width: auto;
     padding: px;
+}
+.card-footer  {
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.card-footer img  {
+    margin-left: 50px;
+    height: 50px;
+    width: 50px;
 }
