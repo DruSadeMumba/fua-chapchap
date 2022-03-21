@@ -1,0 +1,12 @@
+*{
+    align-items: center;
+    text-align: center;
+    /* background-color: rgb(105,143,54);
+    color: white; */
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+}
+p{
+    font-family: 'Roboto', sans-serif;
+}
