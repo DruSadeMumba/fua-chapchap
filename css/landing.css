@@ -3,9 +3,17 @@
     padding: 40px;
     background-color: white;
 }
+.topnav a {
+    color: rgb(15, 22, 15);
+    overflow: hidden;
+    text-decoration: double;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 150%;
+}
 .card-header img  {
-    width: 120px;
-    height: 80px;
+    width: 200px;
+    height: 160px;
 }
 #moto  {
     font-family: 'Roboto', sans-serif;
@@ -13,7 +21,7 @@
     background-color: rgb(105, 143, 54);
     height: 500px;
     text-align: center;
-    padding-top: 50px;
+    padding-top: 150px;
     border-radius: 15px;
 }
 #slideshow img  {
