@@ -11,6 +11,11 @@ body {
   justify-content: center;
   font-family: "Poppins", sans-serif;
 }
+.main-container {
+  background-color: rgb(45, 184, 117);
+  height: 800px;
+  align-items: center;
+}
 
 .container {
   position: relative;
@@ -22,4 +27,19 @@ body {
   overflow: hidden;
   margin: 0 20px;
   align-items: center;
+}
+/* To flex the two containers and align items in the forms */
+.container .forms {
+  display: flex;
+  align-items: center;
+  height: 500px;
+  width: 200%;
+  transition: height 0.2s ease;
+}
+
+.container .form {
+  width: 50%;
+  padding: 30px;
+  background-color: whitesmoke;
+  transition: margin-left 0.18s ease;
 }
