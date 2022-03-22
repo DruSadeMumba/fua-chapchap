@@ -9,14 +9,14 @@
 		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 		<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./css/landing.css">
-		<script src="./js/jquery-3.6.0.js"></script>
+		<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <title>HOME</title>
 	</head>
 	<body>
 			<div class="container-fluid">
 				<div class="card-header">
 					<!-- links for other html pages -->
-					<div class="topnav fixed-top bg-success">
+					<div class="topnav"> <!--  fixed-top bg-success -->
 						<a href="landing-page.html"><img src="./img/logo.jpg" alt="logo"></a>
 						<a href="">SERVICE PROVIDER</a>
 						<a href="">CUSTOMER</a>
@@ -46,7 +46,13 @@
 					</div>
 				</div>
 				<!-- About us -->
-				<div class="row">
+				<div class="row" id="row2">
+					<style>
+						#row2  {
+							background-image: url(./img/icons/bubbles.png);
+							background-size: cover;
+						}
+					</style>
 					<div class="col-md-6" id="abt-us-img1">
 						<img src="./img/unhappy3.jpg" alt=""><br>
 						<img src="./img/upset2.jpg" alt="">
@@ -103,23 +109,31 @@
 					</div>
 				</div>
 				<!-- Ratings and reviews -->
-				<div class="row">
+				<div class="row" id="row1">
+					<style>
+						#row1  {
+							background-image: url(./img/icons/bubbles.png);
+							background-size: cover;
+						}
+					</style>
 					<div class="col-md-6" id="rate-us">
 						<h2>Customer Reviews</h2>
 						<p>Did you like our services?</p>
 						<p>Could we do anything to make your user experience better?</p>
 						<p>Leave us a review below</p>
-						<form action="">
+						<form action="" id="cst-comm">
 							<div>
-								<input type="text" placeholder="Jane Doe/ Anonymous" required>
+								<input type="text" id="customer-name" placeholder="Jane Doe/ Anonymous" required>
 							</div><br>
 							<textarea name="" id="comments" cols="70" rows="5" required></textarea>
-							<input type="button" onclick="post()" value="Post Review">
+							<input type="submit" id="post" value="Post Review">
 						</form>
 					</div>
 					<div class="col-md-6">
-						<p id="reviews">
+						<p>
+							<ul id="reviews">
 
+							</ul>
 						</p>
 					</div>
 				</div>
