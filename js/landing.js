@@ -11,7 +11,7 @@ Reviews.prototype.fullReview = function(){
     return this.customerName + " " + says + " " + this.customerComment;
 }
 $document.ready(function(){
-    $("form#cst-comm").submit(function(event){
+    $("form#post").submit(function(event){
         event.preventDefault();
 
         let inputtedCustomerName = $("input#customer-name").val();
