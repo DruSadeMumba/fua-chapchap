@@ -136,7 +136,7 @@ body {
 .form a:hover {
   text-decoration: underline;
 }
-
+/* style the login and sign up buttons */
 .form .button {
   margin-top: 35px;
 }
