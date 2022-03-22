@@ -66,3 +66,50 @@ body {
   width: 30px;
   border-radius: 25px;
 }
+
+/* style the input form fields */
+.form .input-field {
+  position: relative;
+  height: 50px;
+  width: 100%;
+  margin-top: 30px;
+}
+#location {
+  height: 40px;
+  width: 100%;
+  font-size: 16px;
+  border-bottom: 2px solid lightgrey;
+}
+
+.input-field input {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  padding: 0 35px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+  border-bottom: 2px solid lightgrey;
+  border-top: 2px solid transparent;
+  transition: all 0.2s ease;
+}
+.input-field i {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  color: lightgrey;
+  font-size: 23px;
+  transition: all 0.2s ease;
+}
+
+.input-field input:is(:focus, :valid) ~ i {
+  color: black;
+}
+/* style the eye splash password hide/show */
+.input-field i.showHidePw {
+  right: 0;
+  cursor: pointer;
+  padding: 10px;
+  color: black;
+  
+}
