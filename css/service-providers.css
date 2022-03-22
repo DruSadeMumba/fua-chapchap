@@ -111,5 +111,14 @@ body {
   cursor: pointer;
   padding: 10px;
   color: black;
-  
+}
+/* style the checkbox to enable ticking */
+.checkbox-text .checkbox-content {
+  display: flex;
+  align-items: center;
+}
+
+.checkbox-content input {
+  margin: 0 8px -2px 4px;
+  accent-color: black;
 }
