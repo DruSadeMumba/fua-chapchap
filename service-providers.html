@@ -22,46 +22,51 @@
 </head>
 
 <body>
-    <div class="container" id="container">
-        <div class="form-container sign-up-container">
-            <form action="#">
-                <h1>Create Account</h1>
-                <span>Use Email or Phone Number for Registration</span><br> <br>
-                <input type="text" placeholder="Name" required /><br><br>
-                <input type="email" placeholder="Email" /><br> <br>
-                <input type="tel" placeholder="+2547xxxxxxxx" required /> <br> <br>
-                <input type="text" placeholder="Location" required /> <br> <br>
-                <input type="number" placeholder="ID No. / Business No." required /> <br> <br>
-                <input type="password" placeholder="Password" /><br><br>
-                <button>Sign Up</button>
-            </form>
-            <div class="form-container sign-in-container">
-                <form action="#">
-                    <h1>Sign In</h1>
-                    <span>Use your account</span> <br /> <br>
-                    <input type="text" placeholder="UserName" /><br> <br>
-                    <input type="password" placeholder="Password" /><br> <br>
-                    <a href="#">Forgot your password?</a><br> <br>
-                    <button>Sign In</button>
-                </form>
-                <div class="overlay-container">
-                    <div class="overlay">
-                        <div class="overlay-panel overlay-left">
+    <div class="main-container">
+        <div class="container">
+            <div id="signInSignUpBox">
+                <div id="overlay">
+                    <div id="overlayInner">
+                        <div id="signUp">
                             <h1>Welcome Back!</h1>
                             <p>To keep connected with us please login with your personal info</p>
-                            <button class="sign" id="signIn">Sign In</button>
+                            <button onClick='moveSliderRight()'>Sign In</button>
                         </div>
-                        <div class="overlay-panel" overlay-right">
+                        <div id="signIn">
                             <h1>Expand Your Market with Us!!</h1>
                             <p>Enter Your Personal details and Start the Journey with us</p>
-                            <button class="sign" id="signUp">Sign Up</button>
+                            <button onClick='moveSliderLeft()'>Sign Up</button>
                         </div>
                     </div>
                 </div>
-
+                <div id="forms">
+                    <div id="signInForm" class='shiftRight'>
+                        <div class="sign">
+                            <h1>Sign In</h1>
+                            <p>Use Your Account Details</p>
+                            <input type="text" placeholder="UserName" /><br> <br>
+                            <input type="password" placeholder="Password" /><br> <br>
+                            <a href="#">Forgot your password?</a><br> <br>
+                            <button>Sign In</button>
+                        </div>
+                    </div>
+                    <div id="signUpForm">
+                        <div class="sign">
+                            <h1>Create Account</h1>
+                            <span>Use Email or Phone Number for Registration</span><br>
+                            <input type="text" placeholder="Name" required /><br>
+                            <input type="email" placeholder="Email" /><br>
+                            <input type="tel" placeholder="+2547xxxxxxxx" required /> <br>
+                            <input type="text" placeholder="Location" required /> <br>
+                            <input type="number" placeholder="ID No. / Business No." required /> <br>
+                            <input type="password" placeholder="Password" /><br><br>
+                            <button>Sign Up</button>
+                        </div>
+                    </div>
+                </div>
             </div>
-
         </div>
+    </div>
 </body>
 
 </html>
