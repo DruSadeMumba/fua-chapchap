@@ -24,10 +24,48 @@
     padding-top: 150px;
     border-radius: 15px;
 }
-#slideshow img  {
-	border-radius: 15px;
+.slider-frame  {
+	overflow: hidden;
 	height: 500px;
 	width: 650px;
+}
+/* slide animation */
+@-webkit-keyframes slide_animation  {
+	0% {left: 0px;}
+	10% {left: 0px;}
+	20% {left: 650px;}
+	30% {left: 650px;}
+	40% {left: 1300px;}
+	50% {left: 1300px;}
+	60% {left: 650px;}
+	70% {left: 650px;}
+	80% {left: 0px;}
+	90% {left: 0px;}
+	100% {left: 0px;}
+}
+
+.slide-images  {
+	border-radius: 15px;
+	height: 500px;
+	width: 1950px;
+	margin: 0 0 0 -1300px;
+	position: relative;
+	-webkit-animation-name: slide_animation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+.img-container  {
+	height: 500px;
+	width: 650px;
+	position: relative;
+	float: right;
+}
+.img-container img  {
+	height: 500px;
+	width: 630px;
+	border-radius: 15px;
 }
 .card-footer  {
     padding: 50px;
