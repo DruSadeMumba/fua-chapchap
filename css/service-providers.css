@@ -56,3 +56,13 @@ body {
   font-size: 27px;
   font-weight: 600;
 }
+/* put an empty space before the login title */
+.form .title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 30px;
+  border-radius: 25px;
+}
