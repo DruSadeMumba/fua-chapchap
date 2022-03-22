@@ -9,6 +9,9 @@
     <link rel="stylesheet" href="./css/service-providers.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
     <!-- js links -->
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script src="./js/service-providers.js"></script>
@@ -18,55 +21,48 @@
     <link
         href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <title>Service providers login</title>
+    <title>Service providers login page</title>
 </head>
 
 <body>
-    <div class="main-container">
-        <div class="container">
-            <div id="signInSignUpBox">
-                <div id="overlay">
-                    <div id="inside-overlay">
-                        <div id="signUp">
-                            <h1>Welcome Back!</h1>
-                            <p>To keep connected with us please login with your personal info</p>
-                            <button onClick='moveSliderRight()'>Log In</button>
-                        </div>
-                        <div id="logIn">
-                            <h1>Expand Your Market with Us!!</h1>
-                            <p>Enter Your Personal details and Start the Journey with us</p>
-                            <button onClick='moveSliderLeft()'>Sign Up</button>
-                        </div>
+    <div class="container">
+        <div class="forms">
+            <!-- login form -->
+            <div class="form login">
+                <span class="title">Login</span>
+
+                <form action="#">
+                    <div class="input-field">
+                        <input type="text" placeholder=" Enter Your UserName" /><br> <br>
+
                     </div>
-                </div>
-                <div id="myforms" action="#">
-                    <div id="signInForm" class='shiftRight'>
-                        <div class="sign">
-                            <h1>Sign In</h1>
-                            <p>Use Your Account Details</p>
-                            <input type="text" placeholder="UserName" /><br> <br>
-                            <input type="password" placeholder="Password" /><br> <br>
-                            <a href="#">Forgot your password?</a><br> <br>
-                            <button>Log In</button>
-                        </div>
+                    <div class="input-field">
+                        <input type="password" class="password" placeholder="Enter your password" required>
+
+                        <i class="uil uil-eye-slash showHidePw"></i>
                     </div>
-                    <div id="signUpForm">
-                        <div class="sign">
-                            <h1>Create Account</h1>
-                            <span>Use Email or Phone Number for Registration</span><br>
-                            <input type="text" placeholder="Name" required /><br>
-                            <input type="email" placeholder="Email" /><br>
-                            <input type="tel" placeholder="+2547xxxxxxxx" required /> <br>
-                            <input type="text" placeholder="Location" required /> <br>
-                            <input type="number" placeholder="ID No. / Business No." required /> <br>
-                            <input type="password" placeholder="Password" /><br><br>
-                            <button>Register </button> 
+
+                    <div class="checkbox-text">
+                        <div class="checkbox-content">
+                            <input type="checkbox" id="logCheck">
+                            <label for="logCheck" class="text">Remember me</label>
                         </div>
+
+                        <a href="#" class="text">Forgot password?</a>
                     </div>
+
+                    <div class="input-field button">
+                        <input type="button" value="Login Now">
+                    </div>
+                </form>
+
+                <div class="login-signup">
+                    <span class="text">Not a member?
+                        <a href="#" class="text signup-link">Signup now</a>
+                    </span>
                 </div>
             </div>
-        </div>
-    </div>
+
 </body>
 
 </html>

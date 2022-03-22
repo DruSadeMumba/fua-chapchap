@@ -1,4 +1,4 @@
-* {
+/* * {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
@@ -7,7 +7,7 @@ body {
   font-family: "Poppins", sans-serif;
 }
 /* putting the background image  */
-.main-container {
+/* .main-container {
   background-image: url(../images/bg2.jpg);
   background-repeat: repeat;
   background-size: contain;
@@ -17,7 +17,7 @@ body {
   height: 700px;
 }
 /* center the signup and log in forms  */
-#signInSignUpBox {
+/* #signInSignUpBox {
   position: relative;
   background-color: rgb(45, 184, 117);
   width: 800px;
@@ -26,24 +26,4 @@ body {
   left: 50%;
   position: absolute;
   transform: translate(-50%, -50%);
-}
-/* separate the overlay part from the forms */
-#overlay {
-  border: 1px solid black;
-  width: 50%;
-  height: 100%;
-  left: 0;
-  position: relative;
-  overflow: hidden;
-  background-color: whitesmoke;
-  border-radius: 5px;
-}
-/* changing the overlay positions */
-#signUp {
-  transform: translateX(0);
-  transition-duration: 1s;
-}
-#logIn {
-  transform: translateX(20%);
-  transition-duration: 1s;
-}
+} */ 
