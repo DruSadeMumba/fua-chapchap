@@ -24,4 +24,9 @@ h3 {
     color: #000;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: 30px;
+    font-size: x-large;
+    
+}
+#amount {
+    font-size: x-large;
 }
