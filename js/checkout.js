@@ -9,9 +9,9 @@ function weight() {
         alert('Your selected weight is' + ' ' + clothesWeight);
         
     }
-    document.getElementById('amount').innerHTML=c;
+    document.getElementById('amount').innerHTML=' Dear customer, your total amount is Ksh' + ' ' + c;
 }
     
-    
+     
     
 
