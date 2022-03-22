@@ -122,3 +122,38 @@ body {
   margin: 0 8px -2px 4px;
   accent-color: black;
 }
+
+/* style the texts in the form */
+.form .text {
+  color: black;
+  font-size: 14px;
+}
+
+.form a.text {
+  color: rgb(45, 184, 117);
+  text-decoration: none;
+}
+.form a:hover {
+  text-decoration: underline;
+}
+
+.form .button {
+  margin-top: 35px;
+}
+
+.form .button input {
+  border: none;
+  color: #fff;
+  font-size: 17px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  border-radius: 6px;
+  background-color: rgb(45, 184, 117);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.form .login-signup {
+  margin-top: 30px;
+  text-align: center;
+}
