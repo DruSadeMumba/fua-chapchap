@@ -43,3 +43,16 @@ body {
   background-color: whitesmoke;
   transition: margin-left 0.18s ease;
 }
+.container.active .login {
+  margin-left: -50%;
+  opacity: 0;
+  transition: margin-left 0.18s ease, opacity 0.15s ease;
+}
+.container.active .forms {
+  height: 700px;
+}
+.container .form .title {
+  position: relative;
+  font-size: 27px;
+  font-weight: 600;
+}
