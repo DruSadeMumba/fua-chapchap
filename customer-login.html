@@ -26,18 +26,65 @@
                         <form action="">
                             <fieldset>
                                 <!-- <legend>Please fill these fields:</legend> -->
-                                <label for="Names" class="form-label">Enter first name:</label><br>
-                                <input type="text" placeholder="First name" required><br>                       
-                                <label for="Names" class="form-label pt-3">Enter second name:</label><br>
-                                <input type="text" placeholder="Second name" required><br>
-                                <label for="phonenumber" class=" form-label pt-3">Enter phone number :</label><br>
-                                <input type="number" placeholder="Enter phone number" required><br>
-                                <label for="email" class="form-label pt-3">Enter e-mail address</label><br>
-                                <input type="email" name="" id="" placeholder="Enter e-mail address" required><br>
-                                <label for="location" class="form-label pt-3"></label><br>
-                                <input type="text" name="" id="" placeholder="Enter locality"><br>
-                                <label for="password" class="form-label pt-3">Enter password</label><br>
-                                <input type="password"><br>
+                                <div class="row mb-3 pt-3">
+                                    <label for="inputLocation" class="col-sm-2 col-form-label">Enter first name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control bg-dark text-white" id="inputFirstName" placeholder="Enter your first name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <label for="inputLocation" class="col-sm-2 col-form-label">Enter second name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control bg-dark text-white" id="inputSecondName" placeholder="Enter your second name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Phone number:</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-text">+ 254</span>
+                                            <input type="number" class="form-control bg-dark text-white" placeholder="Enter your Phone number" required>
+                                        </div>                                        
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputEmail" class="col-sm-2 col-form-label">E-mail address:</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control bg-dark text-white" placeholder="Enter your Email">
+                                            <span class="input-group-text">@gmail.com</span>
+                                        </div>                                        
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputLocation" class="col-sm-2 col-form-label">Input your location:</label>
+                                    <div class="col-sm-10">
+                                        <select name="location" class="form-control bg-dark text-white">
+                                            <option value="Thika">Thika</option>
+                                            <option value="Roysambu">Roysambu</option>
+                                            <option value="Juja">Juja</option>
+                                            <option value="Ruiru">Ruiru</option>
+                                            <option value="Githurai">Githurai</option>
+                                            <option value="Kahawa Sukari">Kahawa Sukari</option>
+                                            <option value="Survey">Survey</option>
+                                            <option value="Allsops">Allsops</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Input your password:</label>
+                                    <div class="col-sm-10">
+                                      <input type="password" class="form-control bg-dark text-white" id="inputPassword" placeholder="Enter password" required>
+                                      <div id="passwordHelpBlock" class="form-text text-white">
+                                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                      </div>
+                                    </div>
+                                </div>
                                 <!-- <label for="gender" class=" form-label pt-3">Choose a gender :</label><br>
                                 <select name="" id="">
                                     <option value="Male">Male</option>
@@ -46,7 +93,7 @@
                             </fieldset>
                         </form>
                         <div>
-                            <a href=""><button type="submit" class="btn btn-success">Request Service</button></a>
+                            <a href=""><button type="submit" class="btn btn-success" id="customer">Request Service</button></a>
                         </div>
                     </div>
                 </div>
