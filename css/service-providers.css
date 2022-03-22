@@ -38,3 +38,12 @@ body {
   background-color: whitesmoke;
   border-radius: 5px;
 }
+/* changing the overlay positions */
+#signUp {
+  transform: translateX(0);
+  transition-duration: 1s;
+}
+#logIn {
+  transform: translateX(20%);
+  transition-duration: 1s;
+}
