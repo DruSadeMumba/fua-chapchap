@@ -8,4 +8,11 @@ h3 {
     
     color: green;
     text-align: center;
+
+}
+.checkout-overlay {
+    background-color: rgb(207, 196, 196);
+    height: inherit;
+    padding: 20px;
+    border-radius: 20px;
 }
