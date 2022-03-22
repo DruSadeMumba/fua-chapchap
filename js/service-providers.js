@@ -24,3 +24,11 @@ pwShowHide.forEach((eyeIcon) => {
     });
   });
 });
+
+// To hide one form and make the other to disappear (signup and login form)
+signUp.addEventListener("click", () => {
+  container.classList.add("active");
+});
+login.addEventListener("click", () => {
+  container.classList.remove("active");
+});
