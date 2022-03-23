@@ -5,7 +5,7 @@ document.getElementById("license-year").innerHTML = year;
 
 function Reviews(name, comment) {
     this.customerName = name;
-    this.customerComment = comment;
+    this.customerComment = comment; 
 }
 Reviews.prototype.fullReview = function(){
     return this.customerName + " " + says + " " + this.customerComment;
