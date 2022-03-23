@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="./login-assets/icons8-circled-user-female-skin-type-4-16.png" type="image/x-icon">
+    <!-- GOOGLEFONTS APIs -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- BOOTSTRAP -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/customer-login.css">
+    <title>Customer-login</title>
+</head>
+<body>
+    <section>
+        <div class="container-fluid">
+            <div class="container">
+                <div class="container">
+                    <h1 class="display-3">Please fill in your details</h1>
+                </div>
+                <div class="customer-login">
+                    <div class="container">
+                        <form action="">
+                            <fieldset>
+                                <!-- <legend>Please fill these fields:</legend> -->
+                                <div class="row mb-3 pt-3">
+                                    <label for="inputLocation" class="col-sm-2 col-form-label">Enter first name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control bg-dark text-white" id="inputFirstName" placeholder="Enter your first name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <label for="inputLocation" class="col-sm-2 col-form-label">Enter second name:</label>
+                                    <div class="col-sm-10">
+                                      <input type="text" class="form-control bg-dark text-white" id="inputSecondName" placeholder="Enter your second name" required>
+                                    </div>
+                                </div>
+                                
+                                <div class="row mb-3">
+                                    <label for="inputNumber" class="col-sm-2 col-form-label">Phone number:</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <span class="input-group-text">+ 254</span>
+                                            <input type="number" id="phone" class="form-control bg-dark text-white" placeholder="Enter your Phone number" required>>    
+                                        </div>                                        
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputEmail" class="col-sm-2 col-form-label">E-mail address:</label>
+                                    <div class="col-sm-10">
+                                        <div class="input-group">
+                                            <input type="email" class="form-control bg-dark text-white" placeholder="Enter your Email" id="emailAddress">
+                                            <span class="input-group-text">@gmail.com</span>
+                                        </div>                                        
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputLocation" class="col-sm-2 col-form-label">Input your location:</label>
+                                    <div class="col-sm-10">
+                                        <select name="location" class="form-control bg-dark text-white">
+                                            <option value="Thika">Thika</option>
+                                            <option value="Roysambu">Roysambu</option>
+                                            <option value="Juja">Juja</option>
+                                            <option value="Ruiru">Ruiru</option>
+                                            <option value="Githurai">Githurai</option>
+                                            <option value="Kahawa Sukari">Kahawa Sukari</option>
+                                            <option value="Survey">Survey</option>
+                                            <option value="Allsops">Allsops</option>
+                                        </select>
+                                    </div>
+                                </div>
+
+                                <div class="row mb-3">
+                                    <label for="inputPassword" class="col-sm-2 col-form-label">Input your password:</label>
+                                    <div class="col-sm-10">
+                                      <input type="password" class="form-control bg-dark text-white" id="inputPassword" placeholder="Enter password" required>
+                                      <div id="passwordHelpBlock" class="form-text text-warning">
+                                        Your password must be 8-20 characters long, contain letters and numbers, and must not contain spaces, special characters, or emoji.
+                                      </div>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </form>
+                        <div>
+                            <a href=""><button type="submit" class="btn btn-success" id="customer" onclick="validateForm()">Request Service</button></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="./js/customer-login.js"></script>
+</body>
+</html>
