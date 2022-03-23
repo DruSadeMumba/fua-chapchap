@@ -26,12 +26,28 @@ h1{
     color:rgb(85,85,85);
     font-weight: 700;
 }
+#why-us ol{
+    font-size: 18px;
+}
 #why-us {
-
     margin: 100px;
 }
 #works{
-    margin: 200px;
+    height: 400px;
+    margin: 100px;
+}
+#works img{
+    display: flex;
+    float: left;
+    height:200px;
+    margin:20px;
+    border-radius: 100%;
+    margin-top:20px;
+    width:200px;
+}
+#works p{
+    font-size:20px;
+    padding-left: 40px;
 }
 #works h2{
     font-family: "Roboto", sans-serif;
