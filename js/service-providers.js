@@ -4,7 +4,7 @@ let container = document.querySelector(".container"),
   signUp = document.querySelector(".signup-link"),
   login = document.querySelector(".login-link");
 
-//   T0 show/hide the password(eye flash
+//   T0 show/hide the password(eye flash)
 pwShowHide.forEach((eyeIcon) => {
   eyeIcon.addEventListener("click", () => {
     pwFields.forEach((pwField) => {
@@ -32,3 +32,23 @@ signUp.addEventListener("click", () => {
 login.addEventListener("click", () => {
   container.classList.remove("active");
 });
+
+function validateForm() {
+  var Name = document.getElementById("name");
+  var Phone = document.getElementById("phone");
+  var BusinessNo = document.getElementById("number");
+  var Location = document.getElementById("location");
+  var Password = document.getElementById("pass");
+  if (
+    Name.value == "" ||
+    Phone.value == "" ||
+    Location.value == "" ||
+    BusinessNo.value == "" ||
+    Password.value == ""
+  ) {
+    alert("Please enter the required details");
+    return false;
+  } else {
+    true;
+  }
+}

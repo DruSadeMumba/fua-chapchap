@@ -64,18 +64,21 @@
                 <div class="form signup">
                     <h1>Create Account</h1>
                     <span>Use Email or Phone Number for Registration</span><br>
-                    <form action="#">
+                    <form action="message.html" onsubmit="return validateForm();">
                         <div class="input-field">
-                            <input type="text" placeholder="Name" required>
+                            <input type="text" id="name" placeholder="Name">
                         </div>
                         <div class="input-field">
-                            <input type="email" placeholder="Email" required>
+                            <input type="email" id="email" placeholder="Email">
                         </div>
                         <div class="input-field">
-                            <input type="tel" placeholder="+2547xxxxxxxx" required />
+                            <input type="tel" id="phone" placeholder="+254xxxxxxxxx" />
                         </div>
                         <div class="input-field">
-                            <select name="location" id="location" required>
+                            <input type="number" id="number" placeholder="ID No./Business No.">
+                        </div>
+                        <div class="input-field">
+                            <select name="location" id="location">
                                 <option value="#">Choose Your Location</option>
                                 <option value="Roysambu">Roysambu</option>
                                 <option value="Juja">Juja</option>
@@ -88,7 +91,7 @@
 
                         </div>
                         <div class="input-field">
-                            <input type="password" class="password" placeholder="Create a password" required>
+                            <input type="password" class="password" id="pass" placeholder="Create a password">
                             <i class="uil uil-eye-slash showHidePw"></i>
                         </div>
 
@@ -101,7 +104,7 @@
                         </div>
 
                         <div class="input-field button">
-                            <input type="button" value="Login Now">
+                            <input type="submit" value="Sign Up">
                         </div>
                     </form>
 
