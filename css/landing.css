@@ -9,28 +9,11 @@
     height: 70px;
     width: 70px;
 }
-/* .topnav a {
-    color: rgb(15, 22, 15);
-    overflow: hidden;
-    text-decoration: double;
-    padding-left: 25px;
-    text-align: center;
-    font-size: 150%;
-}*/
 
 .card-header img  {
     width: 200px;
     height: 160px;
 }
-/* #moto  {
-    font-family: 'Roboto', sans-serif;
-    color: whitesmoke;
-    background-color: #2db775;
-    height: 500px;
-    text-align: center;
-    padding-top: 150px;
-    border-radius: 15px; */
-
 
 /* slide animation */
 .slider-frame  {
@@ -64,6 +47,7 @@
 	-webkit-animation-direction: alternate;
 	-webkit-animation-play-state: running;
 }
+
 .img-container  {
 	height: 700px;
 	width: 1300px;
@@ -154,6 +138,46 @@ input, textarea  {
     font-weight: bolder;
     text-align: center;
     font-family: 'Poppins', sans-serif;
+}
 
-
+.box-container{
+    font-family: 'Poppins', sans-serif;
+    right: 80px;
+    bottom:320px;
+    width: 100%;
+    height: 350px;
+   margin: 30px 50px 50px 50px; 
+}
+.box-container .ratings{
+    position: relative;
+    width: 20%;
+    height: 450px;
+    float: left;
+    margin: 20px 50px 20px 50px; 
+    align-items: center;
+    border: solid rgb(245, 228, 228) 2px;
+    border-radius: 2px;
+}
+.box-container img{
+    height: 80px;
+    width: 80px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 15px;
+}
+.box-container .ratings .comments{
+    font-size: 20px;
+    color: black;
+    margin: 10px;
+    text-align: center;
+}
+.box-container .ratings .reviews{
+    color: rgb(9, 255, 0);
+    box-align: center;
+}
+#row3  {
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding: 50px;
 }
