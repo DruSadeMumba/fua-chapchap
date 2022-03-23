@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./css/checkout.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>Fua Chapchap</title>
+</head>
+<body>
+  <div class="checkoutform" id="checkout">
+      <h3 class="text centre" id="checkout-form"> Checkout Form</h3>
+      <div class="form-group row">
+          <div class="col-sm-2"></div>
+          <div class="col-sm-8 checkout-overlay text-center">
+              <form class="col-sm-6 offset-sm-3 text-center">
+                  <label>Select Service Option:</label>
+                  <select class="custom-select custom-select-md mb-3 service option" required>
+                      <option value="inhouse">Inhouse</option>
+                      <option value="pickup"> Pickup</option>
+                  </select>
+                  <label for="number">Enter the Weight of Your Clothes in Kgs:</label>
+                  <input type="number" class="form-control" id="number" placeholder="Weight in Kgs" min="5" required>
+                 <label>Select Your Preferred Payment Method:</label>
+                 <select class="custom-select custom-select-md mb-3" id="Payment Method" required>
+                     <option value="Mpesa">Mpesa</option>
+                     <option value="debit card">Debit Card</option>
+                 </select>
+              </form>
+              
+                  <button type="submit" class="btn btn-success checkout" id="checkout-button" onclick="weight()">
+                      Checkout
+                  </button>
+          </div>  
+      </div>
+  </div>  
+  <div class="checkout-summary" id="sum-checkout">
+      <h2 class="text-center" id="summary"> Checkout Summary</h2>
+      <ol id="amount" class="text-center sum"></ol>
+
+      
+  </div>
+
+
+  
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+  <script src="./js/checkout.js"></script>
+
+</body>
+
+
+</html>
