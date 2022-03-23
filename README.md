@@ -1,13 +1,12 @@
 READMe template
 
 # FUA CHAP CHAP
-#### {Brief description of application}, {Date of current version}
-#### By 
-**Drucilla Mumba**
+#### {Brief description of application}, 23-05-2022.
+#### By **Drucilla Mumba**
 #### Contributors
-**Caroline Mwendwa**
-**Peter Karongo**
-**Williams Oditi**
+* **Caroline Mwendwa**
+* **Peter Karongo**
+* **Williams Oditi**
 ## Description
 
 ## Behaviour
@@ -31,11 +30,11 @@ To date, there are no known bugs.
 * Create data base to store client details.
 * Link customers and service providers based on their location.
 ## Support and contact details
-caroline.mwendwa@student.moringaschool.com
-drucilla.mumba@student.moringaschool.com
-peter.karongo@student.moringaschool.com
-williams.oditi@student.moringaschool.com
+* caroline.mwendwa@student.moringaschool.com
+* drucilla.mumba@student.moringaschool.com
+* peter.karongo@student.moringaschool.com
+* williams.oditi@student.moringaschool.com
 ### License
-(c) 2022 DruSadeMumba, Moringa School.
-Licensed under [MIT License](LICENSE)
+* (c) 2022 DruSadeMumba, Moringa School.
+* Licensed under [MIT License](LICENSE)
 
