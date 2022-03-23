@@ -1,0 +1,136 @@
+.card-header  {
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+    background-color: white;
+}
+.topnav  {
+    background-color: #2db775;
+}
+.topnav img  {
+    border-radius: 50%;
+}
+.topnav a {
+    color: rgb(15, 22, 15);
+    overflow: hidden;
+    text-decoration: double;
+    padding-left: 25px;
+    text-align: center;
+    font-size: 150%;
+   
+
+}
+.topnav a:hover {
+    background-color: chartreuse;
+}
+.card-header img  {
+    width: 200px;
+    height: 160px;
+}
+#moto  {
+    font-family: 'Roboto', sans-serif;
+    color: whitesmoke;
+    background-color: #2db775;
+    height: 500px;
+    text-align: center;
+    padding-top: 150px;
+    border-radius: 15px;
+}
+
+/* slide animation */
+.slider-frame  {
+	overflow: hidden;
+	height: 500px;
+	width: 650px;
+}
+@-webkit-keyframes slide_animation  {
+	0% {left: 0px;}
+	10% {left: 0px;}
+	20% {left: 650px;}
+	30% {left: 650px;}
+	40% {left: 1300px;}
+	50% {left: 1300px;}
+	60% {left: 650px;}
+	70% {left: 650px;}
+	80% {left: 0px;}
+	90% {left: 0px;}
+	100% {left: 0px;}
+}
+
+.slide-images  {
+	border-radius: 15px;
+	height: 500px;
+	width: 1950px;
+	margin: 0 0 0 -1300px;
+	position: relative;
+	-webkit-animation-name: slide_animation;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: running;
+}
+.img-container  {
+	height: 500px;
+	width: 650px;
+	position: relative;
+	float: right;
+}
+.img-container img  {
+	height: 500px;
+	width: 630px;
+	border-radius: 15px;
+}
+.card-footer  {
+    padding: 50px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+.card-footer img  {
+    margin-left: 60px;
+    height: 50px;
+    width: 50px;
+}
+#feedback  {
+    padding-top: 100px;
+    padding-bottom:100px;
+    padding-left: 20px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+}
+#about-us  {
+    padding-top: 150px;
+    padding-right: 100px;
+    padding-left: 100px;
+    padding-bottom: 200px;
+	font-size: large;
+}
+#abt-us-img1 img  {
+height: 350px;
+width: 400px;
+margin-bottom: 10px;
+margin-top: 10px;
+border-radius: 30px;
+margin-left: 150px;
+}
+#faqs  {
+    padding: 150px;
+    font-weight: bolder;
+    font-size: x-large;
+    font-family: 'Poppins', sans-serif;
+}
+#rate-us  {
+    padding-left: 50px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    font-family: 'Poppins', sans-serif;
+}
+input, textarea  {
+    background-color: transparent;
+    border-radius: 15px;
+    border-color: black;
+    border-width: 2px;
+    color: black;
+    margin-bottom: 15px;
+    margin-right: 15px;
+    box-shadow: inset 0 2px 10px rgb(45,183,117);
+    text-align: center;
+}

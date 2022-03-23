@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- font-awesome link -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+    href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+    rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <!-- css links -->
+    <link rel="stylesheet" href="./css/service-providers.css">
+    <title>Service providers login page</title>
+</head>
+
+<body>
+    <div class="main-container">
+        <a href="./index.html"><button class="btn btn-success float-end">BACK</button></a>
+        <div class="container">
+            <div class="forms">
+                <!-- login form -->
+                <div class="form login">
+                    <span class="title">Login</span>
+
+                    <form action="after-login.html" onsubmit="return validate();">
+
+                        <div class="input-field">
+                            <input type="text" id="username" placeholder=" Enter Your UserName" /><br> <br>
+
+                        </div>
+                        <div class="input-field">
+                            <input type="password" id="password" class="password" placeholder="Enter your password">
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="logCheck">
+                                <label for="logCheck" class="text">Remember me</label>
+                            </div>
+
+                            <a href="#" class="text">Forgot password?</a>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="submit" value="Login Now">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Not a member?
+                            <a href="#" class="text signup-link">Signup now</a>
+                        </span>
+                    </div>
+                </div>
+
+                <!-- Registration Form -->
+                <div class="form signup">
+                    <h1>Create Account</h1>
+                    <span>Use Email or Phone Number for Registration</span><br>
+                    <form action="message.html" onsubmit="return validateForm();">
+                        <div class="input-field">
+                            <input type="text" id="name" placeholder="Name">
+                        </div>
+                        <div class="input-field">
+                            <input type="email" id="email" placeholder="Email">
+                        </div>
+                        <div class="input-field">
+                            <input type="tel" id="phone" placeholder="+254xxxxxxxxx" />
+                        </div>
+                        <div class="input-field">
+                            <input type="number" id="number" placeholder="ID No./Business No.">
+                        </div>
+                        <div class="input-field">
+                            <select name="location" id="location">
+                                <option value="#">Choose Your Location</option>
+                                <option value="Roysambu">Roysambu</option>
+                                <option value="Juja">Juja</option>
+                                <option value="Ruiru">Ruiru</option>
+                                <option value="Githurai">Githurai</option>
+                                <option value="Kahawa Sukari">Kahawa Sukari</option>
+                                <option value="Survey">Survey</option>
+                                <option value="Alsops">Alsops</option>
+                            </select>
+
+                        </div>
+                        <div class="input-field">
+                            <input type="password" class="password" id="pass" placeholder="Create a password">
+                            <i class="uil uil-eye-slash showHidePw"></i>
+                        </div>
+
+                        <div class="checkbox-text">
+                            <div class="checkbox-content">
+                                <input type="checkbox" id="sigCheck">
+                                <label for="sigCheck" class="text">By signing up, you accept our <span
+                                        class="privacy">Terms of
+                                        Service</span> and <span class="privacy"> Privacy Policy.</span></label>
+                            </div>
+                        </div>
+
+                        <div class="input-field button">
+                            <input type="submit" value="Sign Up">
+                        </div>
+                    </form>
+
+                    <div class="login-signup">
+                        <span class="text">Already a member?
+                            <a href="#" class="text login-link">Login now</a>
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="./js/service-providers.js"></script>
+
+</body>
+
+</html>

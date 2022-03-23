@@ -1,0 +1,79 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.logo {
+  width: 150px;
+  height: 100px;
+  border-radius: 50%;
+}
+h1{
+    margin-top:20px;
+    text-align: center;
+    color:rgb(85,85,85);
+    font-weight: bold;
+}
+#join-us{
+    background-color: rgb(45, 184, 117);
+    height: 400px;
+}
+#why-us h2{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(85,85,85);
+    font-weight: 700;
+}
+#why-us ol{
+    font-size: 18px;
+}
+#why-us {
+    margin: 100px;
+}
+#works{
+    height: 400px;
+    margin: 100px;
+}
+#works img{
+    display: flex;
+    float: left;
+    height:200px;
+    margin:20px;
+    border-radius: 100%;
+    margin-top:20px;
+    width:200px;
+}
+#works p{
+    font-size:20px;
+    padding-left: 40px;
+}
+#works h2{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(85,85,85);
+    font-weight: 700;
+}
+#questions{
+    margin:200px;
+    border: solid 1px black;
+    height:500px;
+    padding:30px;
+}
+#questions h2{
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    margin-top: 20px;
+    color:rgb(85,85,85);
+    font-weight: 700;
+}
+#questions p{
+    color:rgb(45, 184, 117);
+    font-size:14px;
+}
+#questions h3{
+    font-weight: 500;
+    font-size: 18px;
+}
