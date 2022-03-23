@@ -33,6 +33,7 @@ login.addEventListener("click", () => {
   container.classList.remove("active");
 });
 
+// validate the signUp form
 function validateForm() {
   var Name = document.getElementById("name");
   var Phone = document.getElementById("phone");
@@ -46,6 +47,18 @@ function validateForm() {
     BusinessNo.value == "" ||
     Password.value == ""
   ) {
+    alert("Please enter the required details");
+    return false;
+  } else {
+    true;
+  }
+}
+
+// validate the login form
+function validate() {
+  var Username = document.getElementById("username");
+  var Password2 = document.getElementById("password");
+  if (Username.value == "" || Password2.value == "") {
     alert("Please enter the required details");
     return false;
   } else {

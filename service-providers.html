@@ -28,14 +28,14 @@
                 <div class="form login">
                     <span class="title">Login</span>
 
-                    <form action="#">
+                    <form action="after-login.html" onsubmit="return validate();">
+
                         <div class="input-field">
-                            <input type="text" placeholder=" Enter Your UserName" /><br> <br>
+                            <input type="text" id="username" placeholder=" Enter Your UserName" /><br> <br>
 
                         </div>
                         <div class="input-field">
-                            <input type="password" class="password" placeholder="Enter your password" required>
-
+                            <input type="password" id="password" class="password" placeholder="Enter your password">
                             <i class="uil uil-eye-slash showHidePw"></i>
                         </div>
 
@@ -49,7 +49,7 @@
                         </div>
 
                         <div class="input-field button">
-                            <input type="button" value="Login Now">
+                            <input type="submit" value="Login Now">
                         </div>
                     </form>
 
@@ -98,7 +98,8 @@
                         <div class="checkbox-text">
                             <div class="checkbox-content">
                                 <input type="checkbox" id="sigCheck">
-                                <label for="sigCheck" class="text">By signing up, you accept our <span class="privacy">Terms of
+                                <label for="sigCheck" class="text">By signing up, you accept our <span
+                                        class="privacy">Terms of
                                         Service</span> and <span class="privacy"> Privacy Policy.</span></label>
                             </div>
                         </div>
